@@ -10,6 +10,8 @@ import RegisterPage from '../Pages/RegisterPage'
 import LoginPage from '../Pages/LoginPage'
 import { useState,useEffect } from 'react'
 import Projects from '../Pages/Projects'
+import ProjectList from '../Pages/ProjectList'
+import ProjectCreate from '../Pages/ProjectCreate'
 
 
 const AppRouter = () => {
@@ -20,7 +22,8 @@ const AppRouter = () => {
         <BrowserRouter>
         <Routes>
         <Route path="/" element={<AppLayout><Home/></AppLayout>} />
-        <Route path="/projects" element={<AppLayout><Projects/></AppLayout>} />
+        <Route path="/projects/list" element={<AppLayout><ProjectList/></AppLayout>} />
+        <Route path="/projects/create" element={<AppLayout><ProjectCreate /></AppLayout>} />
       <Route path="/dashboard" element={<AppLayout><Dashboard/></AppLayout>} />
       <Route path="/about" element={<AppLayout><About/></AppLayout>} />
       <Route path="/profile" element={<AppLayout><Profile/></AppLayout>} />

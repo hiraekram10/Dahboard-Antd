@@ -13,7 +13,7 @@ const Profile = () => {
 
   return (
     <div>
-      Hi from profile 
+      Hi from profile
      
     </div>
   )

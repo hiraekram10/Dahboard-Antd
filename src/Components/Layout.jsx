@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
@@ -7,7 +7,7 @@ import {
   VideoCameraOutlined,
   AppstoreOutlined,
   ProfileOutlined,
-  ProjectOutlined 
+  ProjectOutlined
 } from '@ant-design/icons';
 import logo from '../assets/logo.png'
 import './comp.css'
@@ -15,9 +15,10 @@ import { Button, Layout, Menu, theme, Flex, } from 'antd';
 import CustomHeader from './Header';
 import { useNavigate } from 'react-router-dom';
 import CustomDrawer from './CustomDrawer';
+import ProjectTree from './PorjectTree';
 
 
-const { Header, Sider, Content,Footer } = Layout;
+const { Header, Sider, Content, Footer } = Layout;
 
 
 const AppLayout = ({ children }) => {
@@ -46,12 +47,12 @@ const AppLayout = ({ children }) => {
 
   return (
     <Layout style={{ height: 'auto' }}>
-      <Sider style={siderStyle} trigger={null} className='sider'collapsedWidth={80}  collapsed={collapsed} collapsible width={280} height={'auto'} >
-      {!collapsed && (
-  <div className="demo-logo-vertical">
-    <img src={logo} alt="Logo" />
-  </div>
-)}
+      <Sider style={siderStyle} trigger={null} className='sider' collapsedWidth={80} collapsed={collapsed} collapsible width={280} height={'auto'} >
+        {!collapsed && (
+          <div className="demo-logo-vertical">
+            <img src={logo} alt="Logo" />
+          </div>
+        )}
 
         <Menu
           theme='dark'
@@ -65,9 +66,19 @@ const AppLayout = ({ children }) => {
               label: 'Home',
             },
             {
-              key: '/projects',
-              icon: <ProjectOutlined />,
+              key: 'projects-menu',
+              icon: <VideoCameraOutlined />,
               label: 'Projects',
+              children: [
+                {
+                  key: '/projects/list',
+                  label: 'Project List',
+                },
+                {
+                  key: '/projects/create',
+                  label: 'Project Create',
+                },
+              ],
             },
             {
               key: '/dashboard',
@@ -90,52 +101,52 @@ const AppLayout = ({ children }) => {
         />
 
       </Sider>
-      <Layout style={{backgroundColor:"#1A1C23"}}>
+      <Layout style={{ backgroundColor: "#1A1C23" }}>
         <Header
-        className='header-start'
+          className='header-start'
           style={{
             position: 'sticky',
             top: 0,
             zIndex: 1,
             padding: 0,
             // borderBottom:'1px solid grey'
-        
+
             // width: '100%'
           }}
         >
           <div>
-       
+
             <Flex style={{
               backgroundColor: "#1A1C23",
 
 
             }}
-            className='header-flex'
+              className='header-flex'
 
-              // justify={'flex-center'}
-              // align={'end'}
+            // justify={'flex-center'}
+            // align={'end'}
 
             >
-                 <Button className='menuicon'
-            type="text"
-            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            onClick={() => setCollapsed(!collapsed)}
-            style={{
-              fontSize: '16px',
-              width: 64,
-              height: 64,
-            }}
-          />
-              
+              <Button className='menuicon'
+                type="text"
+                icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+                onClick={() => setCollapsed(!collapsed)}
+                style={{
+                  fontSize: '16px',
+                  width: 64,
+                  height: 64,
+                }}
+              />
+
               <div style={{
 
                 width: '100%',
-              // backgroundColor:'red',
+                // backgroundColor:'red',
                 display: 'flex',
-                alignItems:"end",
-                justifyContent:"center",
-                
-                
+                alignItems: "end",
+                justifyContent: "center",
+
+
                 // backgroundColor:"red"
 
 
@@ -166,14 +177,14 @@ const AppLayout = ({ children }) => {
 
         </Content>
         <Footer
-        style={{
-          textAlign: 'center',
-          backgroundColor: "#22242B",
-          color:"#fff"
-        }}
-      >
-        Riho 2024© Created by Hira Ekram
-      </Footer>
+          style={{
+            textAlign: 'center',
+            backgroundColor: "#22242B",
+            color: "#fff"
+          }}
+        >
+          Riho 2024© Created by Hira Ekram
+        </Footer>
       </Layout>
     </Layout>
   );
