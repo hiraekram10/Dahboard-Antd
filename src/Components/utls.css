@@ -1,0 +1,73 @@
+
+
+.sideCard-main{
+background-color: #22242B;
+width: 60px;
+/* height: 200px; */
+position: fixed;
+bottom: 40%;
+right: 0;
+z-index: 4;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+row-gap: 5px;
+border-radius: 10px;
+box-shadow: -2px 2px 4px #036868;
+
+}
+.sCardIcon{
+    /* background-color: brown; */
+    font-size: 26px;
+    padding: 5px;
+    border-bottom: 1px solid #22242B;
+    box-sizing: border-box;
+    
+    flex-shrink: 0;
+    
+}
+.sCardIcon::before{
+    content: attr(data-icons);
+    position: absolute;
+    background-color: #22242B;
+    color: #036868;
+    border-radius: 10px;
+    transform: translateX(-70%) rotate(5deg);
+    font-size: 16px;
+    width: 100px;
+    padding: 10px;
+    opacity: 0;
+    transition: 200ms cubic-bezier(0.9, 0.37, 0.18, 0.76);
+}
+.sCardIcon::after{
+    content: '';
+    position: absolute;
+   height: 0;
+   width: 0;
+   transform: translate(0) rotate(5deg);
+   opacity: 0;
+   
+}
+.sCardIcon:hover{
+   background-color:#25272e;
+   border-radius: 5px;
+   border-bottom: 1px solid #036868;
+   cursor: pointer;
+   
+}
+.sCardIcon:hover::before{
+  transform: translateX(-100%) rotate(0);
+  opacity: 0.9;
+    
+ }
+
+.sCardIcon:hover::after{
+  transform: translate(-70%) rotate(0);
+  opacity: 1;
+}
+.scardi{
+    font-size: 1em;
+    font-weight: bold;
+    color: #036868;
+}

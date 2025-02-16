@@ -1,0 +1,134 @@
+:root{
+  --black :#000;
+  --base:#22242B;
+  --white:#fff;
+}
+.sider{
+   background-color: var(--base)
+   
+}
+.ant-layout-header{
+  border-bottom: 1px solid blue !important;
+}
+
+.header-start{
+  /* background-color: yellow !important;
+  display: flex;
+  align-items:end;
+  justify-content: space-around; */
+  
+ 
+}
+.header-flex{
+  /* width: 90vw; */
+  border-bottom: 1px solid #22242B !important;
+
+}
+.header-text {
+  /* padding-left:20px ; */
+  padding-top:10px ;
+}
+.header-text >h4{
+    color: var(--white);
+    font-weight: 600;
+    line-height: 0.5rem;
+    font-size: 20px;
+}
+.header-text >p{
+    color: var(--white);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.head-inp{
+ width: 100%;
+  height: 40px;
+  background-color: #22242B !important;
+  border: none;
+  border-radius: 10px;
+ padding-left: 2px;
+  
+ 
+  
+
+  
+
+}
+.head-inp::placeholder{
+  color:#737476;
+  font-size: 16px;
+}
+/* .head-inp:focus{
+  border: 2px solid blue !important;
+  background-color: lightblue;
+  color: black; 
+} */
+ .headerhide{
+  padding-top: 10px;
+ }
+
+.side-icons{
+  /* background-color: aqua; */
+  /* width: 50%; */
+  /* gap:10px; */
+ 
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.noti-icon, .dark-icon, .star-icon, .user-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22242B !important;
+  color: #737476;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 22px;
+  /* padding: -3px; */
+  
+  
+  
+}
+.menuicon{
+  background-color: #22242B !important;
+  color: #737476;
+
+  height: 50px;
+  /* border-radius: 50%; */
+  text-align: center;
+  font-size: 22px;
+ margin: 4px;
+  
+  
+  
+}
+ .menuicon:hover{
+  color: #65666B !important;
+}
+.ant-menu-item:hover{
+  background-color: #4E5055 !important;
+  
+}
+.demo-logo-vertical{
+
+  
+  padding: 10px;
+  border-bottom: 1px solid #65666B;
+ 
+ 
+  
+}
+
+/* @media screen and (max-width:1002px){
+  .headerhide{
+    display: none;
+    
+  }
+  
+  
+} */

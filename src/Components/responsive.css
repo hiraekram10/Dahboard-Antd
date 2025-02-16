@@ -1,0 +1,21 @@
+@media  (max-width:1002px){
+    .headerhide{
+      display: none;
+      
+    }
+    .sideCard-main{
+      display: none;
+      background-color: aqua;
+    
+    }
+    
+  }
+  @media  (max-width:768px){
+    .onee{
+      /* background-color: red;  */
+      height: 100%;
+      
+    }
+    
+  }
+  
