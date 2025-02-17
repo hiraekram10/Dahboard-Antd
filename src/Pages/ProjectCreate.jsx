@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row,Col,Card } from 'antd'
+import ProjectAddForm from '../Components/ProjectAddForm'
 // import '../Components/project.css '
 
 const ProjectCreate = () => {
@@ -11,7 +12,7 @@ const ProjectCreate = () => {
         </Col>
         <Col xs={24} sm={24} md={24} lg={24}>
         <Card className='card'>
-
+       <ProjectAddForm/>
         </Card>
         </Col>
       </Row>
