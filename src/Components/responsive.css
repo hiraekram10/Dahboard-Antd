@@ -16,6 +16,26 @@
       height: 100%;
       
     }
+    .proj-card{
+      
+      /* background-color: azure; */
+      display: flex;
+      flex-direction:column ;
+      justify-content: center;
+      align-items: center;
+       
+    }
+    .right button{
+      background-color: yellow !important;
+     display: none;
+    }
+   
+    
+    .list-card li{
+      text-align: center;
+      gap: 12px;
+    }
+   
     
   }
   

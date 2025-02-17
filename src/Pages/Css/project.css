@@ -49,6 +49,10 @@ width: 50%;
     color: var(--text-grey);
     
 }
+.list-card li:hover{
+    cursor: pointer;
+    color: #006666;
+}
 .right{
     /* background-color: rgb(190, 152, 152); */
     width: 50%;
@@ -63,11 +67,21 @@ width: 50%;
     color: #fff;
     font-size: 1.3em;
 }
+
 .right button:hover{
     cursor:pointer;
+    background-color: var(--green-bg);
+    transform: scale(1.1);
+    transition: 500ms ease;
+
 }
 .user-cards{
     /* background-color: yellow; */
+}
+.cardblue{
+    background-color: rgba(0, 102, 102, 0.212);
+    border: 1px solid  rgba(0, 102, 102, 0.212);
+    
 }
 
 .user-col{
@@ -77,11 +91,13 @@ width: 50%;
     /* background-color: green; */
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 5px;
     padding: 2px;
+    font-size: 20px;
 }
 .btn-container{
     /* background-color: palegoldenrod; */
+
     align-self: end;
     
 }
@@ -90,8 +106,58 @@ width: 50%;
     color: var(--text-white);
     border: none;
 }
+.btn-container button:hover{
+    transform: scale(1.1);
+    transition: 500ms ease;
+    background-color: var(--green-bg) !important;
+    color: var(--text-white) !important;
+}
+.title h2{
+  color: var(--text-white);
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.company span{
+    font-size: 0.90em;
+    font-weight: 500;
+    color: var(--text-grey);
+    vertical-align: center;
+    
+}
 .company img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
+    vertical-align: center;
+    
+}
+.description p{
+    font-size: 0.85em;
+    color: var(--text-white);
+}
+.card-list li {
+    display: flex;
+    
+    justify-content:start;
+    color: var(--text-grey);
+    
+    
+}
+.images img{
+    width: 20px;
+    border-radius: 50%;
+    
+    
+}
+.images span{
+    color: var(--text-grey);
+    font-size: 0.60em;
+}
+.card-list span{
+   width: 100px;
+   /* background-color: red; */
+}
+
+.createPorj-main{
+    /* background-color: #65666B; */
 }
