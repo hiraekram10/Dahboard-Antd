@@ -30,7 +30,7 @@ width: 50%;
 }
 .card{
   
-    border: 1px solid #65666B;
+    border: 1pt solid #65666B;
     background-color: var(--grey-bg);
 }
 
@@ -65,4 +65,33 @@ width: 50%;
 }
 .right button:hover{
     cursor:pointer;
+}
+.user-cards{
+    /* background-color: yellow; */
+}
+
+.user-col{
+  /* background-color: pink; */
+}
+.userc-main{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 2px;
+}
+.btn-container{
+    /* background-color: palegoldenrod; */
+    align-self: end;
+    
+}
+.btn-container button{
+    background-color: var(--green-bg);
+    color: var(--text-white);
+    border: none;
+}
+.company img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
