@@ -8,65 +8,68 @@ const { TextArea } = Input;
 
 const ProjectAddForm = () => {
   return (
-    <Row>
-      <Form> 
-      <Col>
-      <Form.Item name="note" label="Note" rules={[{ required: true }]}>
+    <Row gutter={[20,20]}>
+      
+      <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+      <Form.Item  layout="vertical" name="Project Title" label="Project Title" rules={[{ required: true }]}>
         <Input />
       </Form.Item>
      
       </Col>
-      <Col>
-      <Form.Item name="note" label="Note" rules={[{ required: true }]}>
+      <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+      <Form.Item  layout="vertical" name="Client name" label="Client name" rules={[{ required: true }]}>
         <Input />
         </Form.Item>
       </Col>
-      <Col>
-      <Form.Item name="note" label="Note" rules={[{ required: true }]}>
+      <Col xs={24} sm={24} md={12} lg={8} xl={8}>
+      <Form.Item  layout="vertical" name="Project Rate" label="Project Rate" rules={[{ required: true }]}>
         <Input />
         </Form.Item>
       
       </Col>
-      <Col>
-      <Form.Item name="gender" label="Gender" rules={[{ required: true }]}>
+      <Col  xs={24} sm={24} md={12} lg={8} xl={8}>
+      <Form.Item  layout="vertical" name="Project Type" label="Project Type" >
         <Select
-          placeholder="Select a option and change input text above"
+         defaultValue='horly'
+          // placeholder="Horly"
           // onChange={onGenderChange}
           allowClear
         >
-          <Option value="male">male</Option>
-          <Option value="female">female</Option>
-          <Option value="other">other</Option>
+          <Option value="horly" Select>Horuly</Option>
+          <Option value="fix price">Fix price</Option>
+          
         </Select>
       </Form.Item></Col>
-      <Col>
-      <Form.Item name="gender" label="Gender" rules={[{ required: true }]}>
+      <Col  xs={24} sm={24} md={12} lg={8} xl={8}>
+      <Form.Item  layout="vertical" name="Priority" label="Priority" >
         <Select
-          placeholder="Select a option and change input text above"
-          // onChange={onGenderChange}
+        
+           defaultValue='Low'
           allowClear
         >
-          <Option value="male">male</Option>
-          <Option value="female">female</Option>
-          <Option value="other">other</Option>
+          <Option value="Low">Low</Option>
+          <Option value="Medium">Medium</Option>
+          <Option value="High">High</Option>
+          <Option value="Urgent">Urgent</Option>
         </Select>
       </Form.Item>
       </Col>
-      <Col>
-      <Form.Item name="gender" label="Gender" rules={[{ required: true }]}>
+      <Col xs={24} sm={24} md={12} lg={8} xl={8}>
+      <Form.Item  layout="vertical" name="Project Size" label="Project Size" rules={[{ required: true }]}>
         <Select
-          placeholder="Select a option and change input text above"
-          // onChange={onGenderChange}
+      
+         defaultValue='Small'
           allowClear
         >
-          <Option value="male">male</Option>
-          <Option value="female">female</Option>
-          <Option value="other">other</Option>
+          <Option value="Small">Small</Option>
+          <Option value="Medium">Medium</Option>
+          <Option value="Big">Big</Option>
         </Select>
       </Form.Item>
       </Col>
-      <Col>
+      <Col xs={24} sm={24} md={12} lg={8} xl={8}>
       <Form.Item
+       layout="vertical"
         label="DatePicker"
         name="DatePicker"
         rules={[
@@ -80,7 +83,7 @@ const ProjectAddForm = () => {
       </Form.Item>
       
       </Col>
-      <Col>
+      <Col xs={24} sm={24} md={12} lg={8} xl={8}>
       <Form.Item
       layout="vertical"
         label="DatePicker"
@@ -94,15 +97,15 @@ const ProjectAddForm = () => {
       >
         <DatePicker />
       </Form.Item></Col>
-      <Col>
-      <Form.Item label="TextArea">
-          <TextArea rows={4} />
+      <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+      <Form.Item  layout="vertical" label="TextArea">
+          <TextArea rows={1} />
         </Form.Item>
       </Col>
-      <Col>
+      <Col xs={24} sm={24} md={24} lg={24} xl={24}>
   <MyDropzone/>
       </Col>
-      </Form>
+     
     </Row>
   )
 }
