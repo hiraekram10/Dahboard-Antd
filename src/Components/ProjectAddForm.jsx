@@ -2,6 +2,8 @@ import { Row ,Col,Form,Input,Select,DatePicker,} from 'antd'
 import MyDropzone from './FileUpload'
 
 import React from 'react'
+import Redbtn from './btn/Redbtn';
+
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -11,24 +13,24 @@ const ProjectAddForm = () => {
     <Row gutter={[20,20]}>
       
       <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-      <Form.Item  layout="vertical" name="Project Title" label="Project Title" rules={[{ required: true }]}>
-        <Input />
+      <Form.Item className='itemform'  layout="vertical" name="Project Title" label="Project Title" rules={[{ required: true }]}>
+        <Input className="projInp"/>
       </Form.Item>
      
       </Col>
       <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-      <Form.Item  layout="vertical" name="Client name" label="Client name" rules={[{ required: true }]}>
-        <Input />
+      <Form.Item  className='itemform' layout="vertical" name="Client name" label="Client name" rules={[{ required: true }]}>
+        <Input className="projInp"/>
         </Form.Item>
       </Col>
       <Col xs={24} sm={24} md={12} lg={8} xl={8}>
-      <Form.Item  layout="vertical" name="Project Rate" label="Project Rate" rules={[{ required: true }]}>
-        <Input />
+      <Form.Item  className='itemform' layout="vertical" name="Project Rate" label="Project Rate" rules={[{ required: true }]}>
+        <Input className="projInp"/>
         </Form.Item>
       
       </Col>
       <Col  xs={24} sm={24} md={12} lg={8} xl={8}>
-      <Form.Item  layout="vertical" name="Project Type" label="Project Type" >
+      <Form.Item  className='itemform' layout="vertical" name="Project Type" label="Project Type" >
         <Select
          defaultValue='horly'
           // placeholder="Horly"
@@ -41,7 +43,7 @@ const ProjectAddForm = () => {
         </Select>
       </Form.Item></Col>
       <Col  xs={24} sm={24} md={12} lg={8} xl={8}>
-      <Form.Item  layout="vertical" name="Priority" label="Priority" >
+      <Form.Item  className='itemform' layout="vertical" name="Priority" label="Priority" >
         <Select
         
            defaultValue='Low'
@@ -55,20 +57,21 @@ const ProjectAddForm = () => {
       </Form.Item>
       </Col>
       <Col xs={24} sm={24} md={12} lg={8} xl={8}>
-      <Form.Item  layout="vertical" name="Project Size" label="Project Size" rules={[{ required: true }]}>
+      <Form.Item  className='itemform' layout="vertical" name="Project size" label="Project Size" >
         <Select
-      
-         defaultValue='Small'
+        
+           defaultValue='Small'
           allowClear
         >
           <Option value="Small">Small</Option>
-          <Option value="Medium">Medium</Option>
           <Option value="Big">Big</Option>
+          <Option value="Medium">Medium</Option>
+          
         </Select>
-      </Form.Item>
+        </Form.Item>
       </Col>
       <Col xs={24} sm={24} md={12} lg={8} xl={8}>
-      <Form.Item
+      <Form.Item className='itemform'
        layout="vertical"
         label="DatePicker"
         name="DatePicker"
@@ -79,12 +82,12 @@ const ProjectAddForm = () => {
           },
         ]}
       >
-        <DatePicker />
+        <DatePicker className="projInp"/>
       </Form.Item>
       
       </Col>
       <Col xs={24} sm={24} md={12} lg={8} xl={8}>
-      <Form.Item
+      <Form.Item className='itemform'
       layout="vertical"
         label="DatePicker"
         name="DatePicker"
@@ -95,15 +98,21 @@ const ProjectAddForm = () => {
           },
         ]}
       >
-        <DatePicker />
+        <DatePicker className="projInp"/>
       </Form.Item></Col>
       <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-      <Form.Item  layout="vertical" label="TextArea">
-          <TextArea rows={1} />
+      <Form.Item className='itemform'  layout="vertical" label="TextArea">
+          <TextArea rows={1} className="projInp textarea"/>
         </Form.Item>
       </Col>
       <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-  <MyDropzone/>
+      <div className='Proj-dropzone'>
+  <MyDropzone className={'proj-drop'}/>
+  </div>
+      </Col>
+      <Col xs={24} sm={24} md={24} lg={24} xl={24} className='proj-btnsec'>
+     <Redbtn title={'Add'} themeclass={'grbtn'}/>
+      <Redbtn title={'cancel'} themeclass={'Rbtn'}/>
       </Col>
      
     </Row>

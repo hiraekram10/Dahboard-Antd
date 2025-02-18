@@ -1,15 +1,18 @@
 import React from 'react'
 import {useDropzone} from 'react-dropzone'
+import {CloudUploadOutlined} from '@ant-design/icons'
 
-function MyDropzone() {
+function MyDropzone({className}) {
   const {getRootProps, getInputProps} = useDropzone()
   // console.log(getRootProps);
   
 
   return (
-    <div {...getRootProps()}>
+    <div className={className} {...getRootProps()}>
       <input {...getInputProps()} />
-      <p>Drag 'n' drop some files here, or click to select files</p>
+      <div><CloudUploadOutlined /></div>
+      <h1>Drop files here or click to upload.</h1>
+      <p>(This is just a demo dropzone. Selected files are not actually uploaded)</p>
     </div>
   )
 }

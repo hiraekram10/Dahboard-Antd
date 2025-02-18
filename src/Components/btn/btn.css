@@ -1,0 +1,33 @@
+.Rbtn{
+    
+        background-color: #FE6A49 !important;
+        border-radius: 5px;
+        border: none;
+        padding:10px !important;
+        width: 250px;
+        color: #fff;
+        width: 100px;
+        /* font-size: 1.3em; */
+    
+}
+.grbtn:hover{
+    color: #fff !important;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 500ms ease;
+}
+.grbtn{
+    background-color: #00AC46 !important;
+    border-radius: 5px;
+    border: none;
+    padding:10px !important;
+    width: 250px;
+    color: #fff;
+    width: 100px;
+}
+.Rbtn:hover{
+    color: #fff !important;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 500ms ease;
+}

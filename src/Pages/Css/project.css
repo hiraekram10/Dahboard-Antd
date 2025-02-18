@@ -160,4 +160,75 @@ width: 50%;
 
 .createPorj-main{
     /* background-color: #65666B; */
+    font-size: 20px;
+}
+.ant-form-item-label >label {
+    color:var(--text-white) !important;
+    font-size: 1.2em !important;
+}
+
+.projInp{
+    background-color: var(--grey-bg) !important;
+    color: var(--text-white);
+    border: 1pt solid #65666B;
+}
+.textarea{
+    height: 100px !important;
+}
+.ant-picker{
+    width: 100% !important;
+
+}
+.ant-picker input::placeholder {
+    color: white !important;
+}
+
+.projInp:focus {
+    background-color: var(--grey-bg);
+}
+.projInp:hover {
+    background-color: var(--grey-bg);
+}
+.ant-select-selector{
+    background-color: var(--grey-bg) !important;
+    color: var(--text-white) !important;
+    border: 1pt solid #65666B !important;
+}
+.Proj-dropzone{
+    /* background-color: yellow; */
+    height: 250px;
+    display: flex;
+
+}
+.proj-drop{
+    /* background-color: rgb(122, 22, 168); */
+    width: 100%;
+    height:100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed #006666 ;
+    border-radius: 10px ;
+    font-size: 20px;
+}
+.proj-drop h1{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--text-white);
+}
+.proj-drop p {
+    font-size: 0.80em;
+    color: var(--text-grey);
+    font-weight: 200;
+}
+.proj-drop svg{
+    font-size:2em;
+    color: #006666;
+}
+.proj-btnsec{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
 }
