@@ -1,0 +1,27 @@
+import React from 'react'
+import './Css/letterBox.css'
+import { Row,Col ,Flex, Card} from 'antd'
+import LSidder from '../Components/LSidder'
+
+
+const LetterBox = () => {
+  return (
+    <Flex vertical gap={10} className='lbox-main'>
+    <div className='lbox-head'>
+      <h1>Letter Box</h1>
+      </div>
+    <div className='lbox-body'>
+      <Row gutter={[5,5]}>
+        <Col xl={7}>
+        <LSidder/>
+        </Col>
+        <Col xl={17}>
+        <Card className='card'></Card>
+        </Col>
+      </Row>
+    </div>
+    </Flex>
+  )
+}
+
+export default LetterBox

@@ -1,5 +1,5 @@
 import React from 'react';
-import { DownOutlined,VideoCameraOutlined } from '@ant-design/icons';
+import { DownOutlined,VideoCameraOutlined,FundProjectionScreenOutlined ,CaretRightOutlined } from '@ant-design/icons';
 import { Tree } from 'antd';
 import { useNavigate } from 'react-router-dom';
 
@@ -7,16 +7,17 @@ import { useNavigate } from 'react-router-dom';
 const treeData = [
     {
         key: 'projects-menu',
-        icon: <VideoCameraOutlined />,
         label: 'Projects',
         children: [
           {
             key: '/projects/list',
             label: 'Project List',
+            icon:<CaretRightOutlined />
           },
           {
             key: '/projects/create',
             label: 'Project Create',
+            icon:<CaretRightOutlined />
           },
         ],
       }
@@ -35,7 +36,7 @@ const ProjectTree = () => {
 
   return (
     <Tree
-       
+   
       showLine
       switcherIcon={<DownOutlined />}
       defaultExpandAll

@@ -31,3 +31,15 @@
     transform: scale(1.1);
     transition: 500ms ease;
 }
+.themebtn{
+    background-color: #036868;
+    border: none;
+    color: #ffffff ;
+}
+.themebtn:hover{
+    color: #fff !important;
+    background-color: #036868 !important;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 500ms ease;
+}

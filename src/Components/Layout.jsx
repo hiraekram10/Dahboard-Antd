@@ -7,7 +7,9 @@ import {
   VideoCameraOutlined,
   AppstoreOutlined,
   ProfileOutlined,
-  ProjectOutlined
+  ProjectOutlined,
+  MailOutlined ,
+  CaretRightOutlined 
 } from '@ant-design/icons';
 import logo from '../assets/logo.png'
 import './comp.css'
@@ -46,7 +48,7 @@ const AppLayout = ({ children }) => {
   };
 
   return (
-    <Layout style={{ height: 'auto' }}>
+    <Layout style={{ height: 'auto', backgroundColor:'#1A1C23'}}>
       <Sider style={siderStyle} trigger={null} className='sider' collapsedWidth={80} collapsed={collapsed} collapsible width={280} height={'auto'} >
         {!collapsed && (
           <div className="demo-logo-vertical">
@@ -67,18 +69,25 @@ const AppLayout = ({ children }) => {
             },
             {
               key: 'projects-menu',
-              icon: <VideoCameraOutlined />,
+              icon: <ProjectOutlined/>,
               label: 'Projects',
               children: [
                 {
                   key: '/projects/list',
                   label: 'Project List',
+                  icon:<CaretRightOutlined />
                 },
                 {
                   key: '/projects/create',
                   label: 'Project Create',
+                  icon:<CaretRightOutlined />
                 },
               ],
+            },
+            {
+              key: '/letterbox',
+              icon: <MailOutlined />,
+              label: 'Letter Box',
             },
             {
               key: '/dashboard',

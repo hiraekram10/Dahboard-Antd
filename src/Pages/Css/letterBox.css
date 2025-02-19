@@ -1,0 +1,20 @@
+:root{
+    --text-grey:#65666B;
+    --text-white:#fff;
+    --green-bg:#006666;
+    --grey-bg:#22242B
+
+}
+
+.lbox-main{
+    background-color: red;
+    width: 100%;
+}
+.lsider{
+    background-color:var(--grey-bg);
+    border: 1px solid #65666B;
+    border-radius: 10px;
+}
+.lmen{
+    color: var(--text-white);
+}

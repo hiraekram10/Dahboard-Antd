@@ -4,7 +4,9 @@
   --white:#fff;
 }
 .sider{
-   background-color: var(--base)
+   background-color: var(--base);
+   /* border-radius: 0px 20px 20px 0px; */
+   
    
 }
 .ant-layout-header{

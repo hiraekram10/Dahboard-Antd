@@ -8,7 +8,12 @@
       background-color: aqua;
     
     }
-    
+    /* .side-icons{
+      display: flex;
+      background-color: aqua;
+      margin-bottom: 4px;
+    }
+     */
   }
   @media  (max-width:768px){
     .onee{
