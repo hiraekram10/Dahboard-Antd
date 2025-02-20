@@ -60,7 +60,7 @@ const LSidder = () => {
   return (
     <div
       style={{
-        width: 256,
+        // width: 256,
       }}
       className='lsider'
     >

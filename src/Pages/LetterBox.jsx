@@ -11,7 +11,7 @@ const LetterBox = () => {
       <h1>Letter Box</h1>
       </div>
     <div className='lbox-body'>
-      <Row gutter={[5,5]}>
+      <Row gutter={[10,5]}>
         <Col xl={7}>
         <LSidder/>
         </Col>

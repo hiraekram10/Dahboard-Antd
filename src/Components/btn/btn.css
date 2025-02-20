@@ -35,6 +35,7 @@
     background-color: #036868;
     border: none;
     color: #ffffff ;
+    width: 90%;
 }
 .themebtn:hover{
     color: #fff !important;
@@ -42,4 +43,9 @@
     cursor: pointer;
     transform: scale(1.1);
     transition: 500ms ease;
+
+}
+.lmen{
+    color: #FE6A49 !important;
+    font-size: 20px;
 }

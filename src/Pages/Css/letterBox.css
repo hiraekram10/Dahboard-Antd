@@ -7,13 +7,14 @@
 }
 
 .lbox-main{
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
 }
 .lsider{
     background-color:var(--grey-bg);
     border: 1px solid #65666B;
     border-radius: 10px;
+    width: 100%;
 }
 .lmen{
     color: var(--text-white);
