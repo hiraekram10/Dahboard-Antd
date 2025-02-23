@@ -19,3 +19,13 @@
 .lmen{
     color: var(--text-white);
 }
+.ant-list-item{
+    background-color: #fff;
+    color:#ddd !important ;
+}
+.ant-list-item-meta-title a{
+    color: red !important
+}
+.ant-list-item-meta-description {
+    color: red !important
+}

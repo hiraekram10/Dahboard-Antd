@@ -2,6 +2,8 @@ import React from 'react'
 import './Css/letterBox.css'
 import { Row,Col ,Flex, Card} from 'antd'
 import LSidder from '../Components/LSidder'
+import TransactionCard from '../Components/TransactionCard'
+import EmailCard from '../Components/EmailCard'
 
 
 const LetterBox = () => {
@@ -16,7 +18,9 @@ const LetterBox = () => {
         <LSidder/>
         </Col>
         <Col xl={17}>
-        <Card className='card'></Card>
+        <Card className='card'>
+          <EmailCard/>
+        </Card>
         </Col>
       </Row>
     </div>

@@ -12,6 +12,7 @@ import {
 import { Button, Menu } from 'antd';
 import '../Pages/Css/letterBox.css'
 import Redbtn from './btn/Redbtn'
+import LetterModal from './LetterModal';
 
 const items = [
   {
@@ -64,24 +65,25 @@ const LSidder = () => {
       }}
       className='lsider'
     >
-      <Button
+      {/* <Button
         // type="primary"
         onClick={toggleCollapsed}
+        
         style={{
           marginBottom: 16,
         }}
       >
-        {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-      </Button>
-      <div style={{textAlign:'center'}}><Redbtn title={'Compose Email'} themeclass={'themebtn'}><PlusOutlined /></Redbtn> </div>
+        {collapsed ? <MenuUnfoldOutlined  /> : <MenuFoldOutlined />}
+      </Button> */}
+      <div style={{textAlign:'center',margin:'10px'}}><LetterModal title={'Compose Email'}><PlusOutlined /></LetterModal> </div>
       <Menu
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}
         mode="inline"
         className='lmen'
-        
-        theme="transparent"
         inlineCollapsed={collapsed}
+        theme="transparent"
+       
         items={items}
      />
 
