@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import {
-  AppstoreOutlined,
-  ContainerOutlined,
-  DesktopOutlined,
-  MailOutlined,
-  MenuFoldOutlined,
-  MenuUnfoldOutlined,
+ 
+  InboxOutlined ,
   PieChartOutlined,
-  PlusOutlined
+  PlusOutlined,
+  SendOutlined,
+  StarOutlined,
+  WechatWorkOutlined ,
+  DeleteOutlined,
+  FormOutlined,
+  StrikethroughOutlined 
 } from '@ant-design/icons';
 import { Button, Menu } from 'antd';
 import '../Pages/Css/letterBox.css'
@@ -17,37 +19,37 @@ import LetterModal from './LetterModal';
 const items = [
   {
     key: '1',
-    icon: <PieChartOutlined />,
+    icon: <InboxOutlined />,
     label: 'Inbox',
   },
   {
     key: '2',
-    icon: <DesktopOutlined />,
+    icon: <SendOutlined />,
     label: 'Sent',
   },
   {
     key: '3',
-    icon: <ContainerOutlined />,
+    icon: <StarOutlined />,
     label: 'Starred ',
   },
   {
     key: '4',
-    icon: <ContainerOutlined />,
+    icon: <WechatWorkOutlined />,
     label: 'Draft ',
   },
   {
     key: '5',
-    icon: <ContainerOutlined />,
+    icon: <DeleteOutlined />,
     label: 'Trash',
   },
   {
     key: '6',
-    icon: <ContainerOutlined />,
+    icon: <FormOutlined />,
     label: 'Work',
   },
   {
     key: '7',
-    icon: <ContainerOutlined />,
+    icon: <StrikethroughOutlined />,
     label: 'Support',
   },
   

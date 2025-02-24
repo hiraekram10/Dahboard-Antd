@@ -16,16 +16,66 @@
     border-radius: 10px;
     width: 100%;
 }
+.lbox-head h1 {
+    color: #fff;
+    font-weight: 500;
+}
 .lmen{
     color: var(--text-white);
 }
-.ant-list-item{
-    background-color: #fff;
-    color:#ddd !important ;
+.ant-menu-item:hover{
+    background-color: #00666633 !important;
+    color: #006666;
+}
+.ant-list-item,.ant-list-item a{
+    color: #fff !important;
+}
+.ant-list-item:hover{
+   background-color:#1A1C23;
+   cursor: pointer; 
+   
 }
 .ant-list-item-meta-title a{
-    color: red !important
+    color:var(--text-grey) !important
 }
 .ant-list-item-meta-description {
-    color: red !important
+    color:var(--text-grey) !important
+}
+.ant-avatar{
+    border: 3px solid #006666;
+}
+.mail-div {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.mail-div span {
+    display: flex;
+    gap: 10px;
+    
+    
+}
+.mail-div h4{
+    font-size:0.90em;
+    color: var(--text-white);
+
+}
+.mail-div svg {
+    color: #fff;
+}
+.ant-form-item-label > label{
+    color:  var(--text-white) !important;
+}
+.ant-modal-content,.ant-modal-title{
+    background-color: #22242B !important;
+    color: var(--text-white) !important;
+} 
+.ant-modal-close-icon{
+    color: #fff;
+}
+.ant-btn-variant-solid{
+    background-color: #006666;
+}
+.ql-snow.ql-toolbar button{
+    color: #fff !important;
 }

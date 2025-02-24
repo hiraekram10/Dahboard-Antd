@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
 import Redbtn from './btn/Redbtn';
+import {RichTextEditor} from 'react-rte'
+import RichText from './RichText';
 const LetterModal = ({title,children}) => {
   const [open, setOpen] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
@@ -29,14 +31,16 @@ const LetterModal = ({title,children}) => {
       <Modal
        style={{
         top: 20,
+        backgroundColor:""
       }}
-        title="Title"
+        title="ComposeMessage "
         open={open}
         onOk={handleOk}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
       >
-        <p>{modalText}</p>
+       
+   <RichText/>
       </Modal>
     </>
   );
