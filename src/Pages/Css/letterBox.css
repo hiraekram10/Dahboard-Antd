@@ -12,7 +12,7 @@
 }
 .lsider{
     background-color:var(--grey-bg);
-    border: 1px solid #65666B;
+    border: 1px solid #393A41;
     border-radius: 10px;
     width: 100%;
 }
@@ -22,6 +22,12 @@
 }
 .lmen{
     color: var(--text-white);
+}
+.ant-menu-title-content{
+font-size: 18px; 
+font-weight: 600;
+color: #A7A59A !important;
+/* background-color: yellow; */
 }
 .ant-menu-item:hover{
     background-color: #00666633 !important;

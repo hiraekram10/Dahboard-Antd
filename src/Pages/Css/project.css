@@ -2,7 +2,8 @@
     --text-grey:#65666B;
     --text-white:#fff;
     --green-bg:#006666;
-    --grey-bg:#22242B
+    --grey-bg:#22242B;
+    --borderGrey:#393A41
 
 }
 .projList-main{
@@ -30,7 +31,7 @@ width: 50%;
 }
 .card{
   
-    border: 1pt solid #65666B;
+    border: 1pt solid var(--borderGrey);
     background-color: var(--grey-bg);
 }
 
@@ -170,7 +171,7 @@ width: 50%;
 .projInp{
     background-color: var(--grey-bg) !important;
     color: var(--text-white);
-    border: 1pt solid #65666B;
+    border: 1pt solid var(--borderGrey)
 }
 .textarea{
     height: 100px !important;
@@ -192,7 +193,7 @@ width: 50%;
 .ant-select-selector{
     background-color: var(--grey-bg) !important;
     color: var(--text-white) !important;
-    border: 1pt solid #65666B !important;
+    border: 1pt solid var(--borderGrey)!important;
 }
 .Proj-dropzone{
     /* background-color: yellow; */

@@ -69,7 +69,7 @@ const EmailCard = () => {
             <List.Item.Meta
               avatar={<Avatar src={item.picture.large} />}
               title={<a href="#">{item.name?.last}</a>}
-              description="Ant Design, a design lang "
+              description="Ant Design, a design lang"
             />
             <div>content</div>
           </Skeleton>
